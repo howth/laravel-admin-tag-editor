@@ -1,0 +1,34 @@
+{
+    "name": "howth/laravel-admin-tag-editor",
+    "description": "description...",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/howth/laravel-admin-tag-editor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Howth",
+            "email": "xiaohao@haosblog.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TagEditor\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TagEditor\\TagEditorServiceProvider"
+            ]
+        }
+    }
+}
